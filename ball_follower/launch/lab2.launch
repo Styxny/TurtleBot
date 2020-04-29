@@ -1,0 +1,12 @@
+<launch>
+
+<include file="$(find turtlebot_ball_tracker)/launch/track.launch">
+</include>
+
+<node pkg="ball_follower" type="find_ball.py" name="find_ball">
+</node>
+
+<node pkg='ball_follower' type="drive_wheels.py" name="drive_wheels">
+</node>
+
+</launch>

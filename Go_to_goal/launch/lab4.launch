@@ -1,0 +1,13 @@
+<launch>
+
+<include file="$(find turtlebot3_bringup)/launch/turtlebot3_core.launch">
+</include>
+
+
+<node pkg='Go_to_goal' type="getObjectRange.py" name="getObjectRange">
+</node>
+
+<node pkg='Go_to_goal' type="goToGoal.py" name="goToGoal">
+</node>
+
+</launch>
